@@ -12,6 +12,7 @@ a:hover {
 
 header {
    background-color: #a3213b;
+   max-height: 200px;
    nav {
       display: flex;
       h1 {
