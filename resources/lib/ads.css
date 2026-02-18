@@ -34,7 +34,6 @@ main {
 }
 
 .box {
-   min-width: 200px;
    max-width: 1000px;
    border: 0.8vw solid black;
    background-color:#fbf3db;
@@ -48,7 +47,7 @@ main {
    }
    section.banner {
       h1 {
-         font-size: clamp(10px, calc(10px + 10vw), 100px);
+         font-size: clamp(6px, 11vw, 100px);
          font-family: Cristone;
          padding: 0% 4%;
       }
