@@ -3,7 +3,7 @@
 
 @font-face {
    font-family: Cristone;
-   src: url(/arte-della-scherma/resources/share/cristone.ttf);
+   src: url(arte-della-scherma/resources/share/cristone.ttf);
 }
 
 a:hover {
@@ -29,24 +29,28 @@ header {
 main {
    background-color:#fbf3db;
    padding: 5%;
+   display: flex;
+   justify-content: center;
 }
 
 .box {
+   min-width: 600px;
+   max-width: 1000px;
    border: 8px solid black;
    background-color:#fbf3db;
    display: flex;
    flex-direction: column;
    text-align: center;
-   font-size: calc(10px + 2vw);
+   font-size: clamp(4px, calc(4px + 2.2vw), 30px);
    padding: 5% 0%;
    section {
       padding: 3%;
    }
    section.banner {
       h1 {
-         font-size: calc(10px + 10vw);
+         font-size: clamp(10px, calc(10px + 10vw), 125px);
          font-family: Cristone;
-         padding: 10% 5%;
+         padding: 10% 4%;
       }
    }
    section.columns {
@@ -77,6 +81,22 @@ main {
       h2 {
          font-size: calc(10px + 2vw);
          padding: 1%;
+      }
+   }
+   section.gallery {
+      display: flex;
+      flex-direction: row;
+      justify-content: space-between;
+      overflow: scroll;
+      scrollbar-color: #a3213b #fbf3db;
+      scrollbar-width: 0.5%;
+      white-space: nowrap;
+      img {
+         border: 4px solid black;
+         object-fit: cover;
+         max-width: 96%;
+         max-height: 96%;
+         margin: 2% 4% 0.5% 2%;
       }
    }
 }
