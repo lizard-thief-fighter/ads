@@ -12,11 +12,10 @@ a:hover {
 
 header {
    background-color: #a3213b;
-   max-height: 200px;
    nav {
       display: flex;
       h1 {
-         font-size: calc(10px + 4vw);
+         font-size: clamp(10px, calc(10px + 4vw), 100px);
          font-family: Cristone;
          padding: 2%;
          a {
