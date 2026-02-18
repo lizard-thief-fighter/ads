@@ -35,13 +35,13 @@ main {
 
 .box {
    min-width: 600px;
-   max-width: 800px;
+   max-width: 1000px;
    border: 8px solid black;
    background-color:#fbf3db;
    display: flex;
    flex-direction: column;
    text-align: center;
-   font-size: clamp(10px, calc(12px + 1vw), 22px);
+   font-size: clamp(10px, calc(6px + 2vw), 28px);
    padding: 5% 0%;
    section {
       padding: 3%;
