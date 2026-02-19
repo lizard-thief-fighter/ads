@@ -64,7 +64,7 @@ main {
    a {
      padding: 1%; 
      img {
-         width: clamp(50px, 8vw, 200px);
+         width: clamp(50px, 8vw, 120px);
      }
    }
    section.faq {
